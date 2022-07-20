@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+
+<head>
+	<title>Главная страница</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="refresh" content="10000000" >
+	<meta charset="utf-8">
+	
+</head>
+<body>
+<header id="Head">
+	<div class="Search">
+	<form id="form">
+		<input type="text" name="search" class="search" placeholder="Введите название товара">
+		<button>Найти</button>
+	</form>
+	</div>
+	<nav>
+	<a href="Main" class="active">Товары</a>
+	<a href="Delivery">Доставка</a>
+	<a href="Contact">Контакты</a>
+	<a href="About">О компании</a>
+	</nav>
+	<script type="text/javascript" src="css/src/HideHeader.js"></script>
+</header>
+<script src="css/src/LoadAllMaterials.js"></script>
+<div class="All" id="all">
+	<div class="Product" id="product">
+		<img th:src="@{/image/img (1).jpg}">
+		<p>Название 1</p>
+	</div>
+		<div class="Product" id="product">
+		<img th:src="@{/image/img (2).jpg}">
+		<p>Название 2</p>
+	</div>
+		<div class="Product" id="product">
+		<img th:src="@{/image/img (3).jpg}">
+		<p>Название 3</p>
+	</div>
+		<div class="Product" id="product">
+		<img th:src="@{/image/img (4).jpg}">
+		<p>Название 4</p>
+	</div>
+		<div class="Product" id="product">
+		<img th:src="@{/image/img (5).jpg}">
+		<p>Название 5</p>
+	</div>
+	
+	
+</div>
+</body>
+</html>

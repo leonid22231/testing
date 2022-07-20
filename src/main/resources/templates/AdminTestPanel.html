@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdminTestPanel</title>
+</head>
+<body>
+<h1>Connect DB</h1>
+<button type="button" th:onclick="|window.location.href='/db-connect'|">Connect</button>
+<h1>Update DB</h1>
+<button type="button" th:onclick="|window.location.href='/db-update'|">Update</button>
+<h1>Print</h1>
+<button type="button" th:onclick="|window.location.href='/db-print'|">Print</button>
+<h1>Add Wood</h1>
+<button type="button" th:onclick="|window.location.href='/db-addWood'|">Add Wood</button>
+<h1>Close DB</h1>
+<button type="button" th:onclick="|window.location.href='/db-close'|">Close</button>
+<p th:text ="${Db_Text}"> </p>
+<ul>
+    <th:block th:each="name : ${names}">
+        <li th:text="${name}"></li>
+    </th:block>
+</ul>
+</body>
+</html>
